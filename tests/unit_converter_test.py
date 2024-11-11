@@ -1,5 +1,5 @@
 import unittest
-from ..unit_converter.unit_converter import (
+from unit_converter.unit_converter import (
     convert_temperature,
     convert_length,
     convert_weight,
