@@ -6,7 +6,7 @@ class TestProjectileMotion(unittest.TestCase):
 
     # Horizontal Launch Tests
     def test_horizontal_launch(self):
-        result = calculate_projectile_motion(velocity=20, angle=0, height=0)
+        _, _, _, result = calculate_projectile_motion(velocity=20, angle=0, height=0)
         self.assertAlmostEqual(result["flight_time"], 0.0, places=2)
         self.assertAlmostEqual(result["max_height"], 0.0, places=2)
         self.assertAlmostEqual(result["horizontal_range"], 0.0, places=2)
@@ -15,7 +15,7 @@ class TestProjectileMotion(unittest.TestCase):
 
     # Angle Launch Tests
     def test_angle_launch_45_degrees(self):
-        result = calculate_projectile_motion(velocity=20, angle=45, height=0)
+        _, _, _, result = calculate_projectile_motion(velocity=20, angle=45, height=0)
         self.assertAlmostEqual(result["flight_time"], 2.88, places=2)
         self.assertAlmostEqual(result["max_height"], 10.19, places=2)
         self.assertAlmostEqual(result["horizontal_range"], 40.77, places=2)
@@ -23,7 +23,7 @@ class TestProjectileMotion(unittest.TestCase):
         self.assertAlmostEqual(result["impact_angle"], -45.0, places=1)
 
     def test_angle_launch_30_degrees(self):
-        result = calculate_projectile_motion(velocity=25, angle=30, height=0)
+        _, _, _, result = calculate_projectile_motion(velocity=25, angle=30, height=0)
         self.assertAlmostEqual(result["flight_time"], 2.55, places=2)
         self.assertAlmostEqual(result["max_height"], 7.96, places=2)
         self.assertAlmostEqual(result["horizontal_range"], 55.17, places=2)
@@ -32,7 +32,7 @@ class TestProjectileMotion(unittest.TestCase):
 
     # Free Fall Tests
     def test_free_fall_from_height(self):
-        result = calculate_projectile_motion(velocity=0, angle=0, height=50)
+        _, _, _, result = calculate_projectile_motion(velocity=0, angle=0, height=50)
         self.assertAlmostEqual(result["flight_time"], 3.19, places=2)
         self.assertAlmostEqual(result["max_height"], 50.0, places=2)
         self.assertAlmostEqual(result["horizontal_range"], 0.0, places=2)
@@ -41,7 +41,7 @@ class TestProjectileMotion(unittest.TestCase):
 
     # General Test with Height
     def test_launch_with_initial_height(self):
-        result = calculate_projectile_motion(velocity=20, angle=45, height=10)
+        _, _, _, result = calculate_projectile_motion(velocity=20, angle=45, height=10)
         self.assertAlmostEqual(result["flight_time"], 3.47, places=2)
         self.assertAlmostEqual(result["max_height"], 20.19, places=2)
         self.assertAlmostEqual(result["horizontal_range"], 49.08, places=2)
