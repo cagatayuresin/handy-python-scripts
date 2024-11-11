@@ -19,6 +19,7 @@ Simply download or clone the repo, and run the script of your choice using Pytho
 
 1. [IP Range Calculator](/ip_range_calc/README.md)
 2. [Unit Converter](/unit_converter/README.md)
+3. [Projectile Motion](/projectile_motion/README.md)
 
 ## License
 
