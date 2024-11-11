@@ -1,5 +1,9 @@
 # Handy Python Scripts for Everyday Use
 
+![Python application](https://github.com/cagatayuresin/handy-python-scripts/actions/workflows/python-app.yml/badge.svg?branch=master&event=push&matrix.python-version=3.10)
+![Python application](https://github.com/cagatayuresin/handy-python-scripts/actions/workflows/python-app.yml/badge.svg?branch=master&event=push&matrix.python-version=3.11)
+![Python application](https://github.com/cagatayuresin/handy-python-scripts/actions/workflows/python-app.yml/badge.svg?branch=master&event=push&matrix.python-version=3.12)
+
 Welcome to my collection of handy Python scripts! This repository contains a variety of small, single-purpose programs designed to help students and anyone in need of quick calculations or simple tasks. Whether you're on your phone, tablet, or computer, you can run these scripts to make your life a little easier, especially for school-related calculations.
 
 ## What You'll Find Here
@@ -16,8 +20,6 @@ Simply download or clone the repo, and run the script of your choice using Pytho
 
 1. [IP Range Calculator](/ip_range_calc/README.md)
 2. [Unit Converter](/unit_converter/README.md)
-
-
 
 ## License
 
