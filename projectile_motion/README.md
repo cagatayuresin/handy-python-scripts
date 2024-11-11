@@ -2,23 +2,30 @@
 
 ![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-`projectile_motion.py` is a Python script designed to calculate the trajectory of a projectile given its initial velocity, launch angle, and optional height. The script is ideal for students, engineers, and physics enthusiasts looking to understand projectile motion through key metrics such as flight time, maximum height, horizontal range, impact velocity, and impact angle.
+`projectile_motion.py` is a Python script that calculates and simulates projectile motion based on user inputs such as initial velocity, launch angle, initial height, and gravity. The script can provide a detailed animation of the projectile's trajectory using the Turtle graphics library or simply output the calculated results to the console. It is ideal for students, educators, and anyone interested in learning about the physics of projectile motion.
 
 ## Features
 
-- **Flight Time Calculation**: Computes the total duration of the projectile's flight.
-- **Maximum Height Calculation**: Determines the highest point reached by the projectile.
-- **Horizontal Range Calculation**: Calculates the total horizontal distance traveled by the projectile.
-- **Impact Velocity and Angle**: Provides the velocity and angle at which the projectile impacts the ground.
-- **Flexible Input**: Users can specify initial velocity, angle, height, and gravity for tailored calculations.
+- **Customizable Inputs:** Users can specify initial velocity, launch angle, height, and gravity.
+
+- **Animated Simulation:** An interactive Turtle animation displays the projectile's trajectory in real-time.
+
+- **Console Output:** Displays flight time, maximum height, horizontal range, impact velocity, and impact angle in the console.
+
+- **User Interaction:** Provides an option to animate or simply print the results to the console.
+
+- **Pause Before Animation:** The animation only starts upon user input, allowing the user to control when to begin.
+
+- **Maximum Height Marker:** A green marker indicates the maximum height reached by the projectile.
 
 ## Requirements
 
 - Python 3.x
+- Python packages: `turtle`, `math`, `time`
 
 ## Usage
 
-Run the script and input the required values to calculate projectile motion metrics.
+Run the script and follow the prompts to input the initial velocity, launch angle, initial height, and gravity. You will then have the option to view the animation or see the calculated results in the console.
 
 ### Example
 
@@ -42,6 +49,7 @@ Enter the initial velocity (m/s): 20
 Enter the launch angle (degrees): 45
 Enter the initial height (m) [optional, default is 0]: 0
 Enter the acceleration due to gravity (m/s^2) [optional, default is 9.81]: 9.81
+Do you want to see the animation? (y/n) [default: n]: y
 ```
 
 The script will then output a summary of the projectile motion:
@@ -54,6 +62,9 @@ Horizontal range: 28.28 m
 Impact velocity: 19.64 m/s
 Impact angle: -45.0 degrees
 ```
+
+Animation Output:
+![Animation](/projectile_motion/docs/img/projectile-animation.gif)
 
 ## License
 
