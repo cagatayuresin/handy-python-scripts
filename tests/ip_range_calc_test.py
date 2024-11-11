@@ -1,6 +1,6 @@
 import unittest
 from ipaddress import IPv4Network
-from ip_range_calc.ip_range_calc import calculate_network_info
+from ..ip_range_calc.ip_range_calc import calculate_network_info
 
 
 class TestNetworkInfo(unittest.TestCase):
