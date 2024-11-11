@@ -1,6 +1,7 @@
 # Handy Python Scripts for Everyday Use
 
-![Python application](https://github.com/cagatayuresin/handy-python-scripts/actions/workflows/python-app.yml/badge.svg?branch=master&event=push&matrix.python-version=3.10) ![Python application](https://github.com/cagatayuresin/handy-python-scripts/actions/workflows/python-app.yml/badge.svg?branch=master&event=push&matrix.python-version=3.11) ![Python application](https://github.com/cagatayuresin/handy-python-scripts/actions/workflows/python-app.yml/badge.svg?branch=master&event=push&matrix.python-version=3.12)
+![Python Versions](https://img.shields.io/badge/Python-3.10%20|%203.11%20|%203.12-blue)
+![Python application](https://github.com/cagatayuresin/handy-python-scripts/actions/workflows/python-app.yml/badge.svg?branch=master&event=push&matrix.python-version=3.10)
 
 Welcome to my collection of handy Python scripts! This repository contains a variety of small, single-purpose programs designed to help students and anyone in need of quick calculations or simple tasks. Whether you're on your phone, tablet, or computer, you can run these scripts to make your life a little easier, especially for school-related calculations.
 
